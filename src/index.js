@@ -2,12 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Users from './users/Users';
+import Product from './product/Product';
+import Menu from './menu/Menu';
 import reportWebVitals from './reportWebVitals';
+import Popper from '@popperjs/core';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Menu />
   </React.StrictMode>
 );
 
