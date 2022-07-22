@@ -1,10 +1,18 @@
 import React, {useState} from 'react';
 import { useCookies } from 'react-cookie';
-import { useNavigate } from 'react-router-dom';
-import App from '../App';
 
 function loginUser(credentials) {
     return fetch('http://localhost:4200/get-all-users', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(credentials)
+    }).then(data => data.json())
+}
+
+function getUser(credentials) {
+    return fetch('http://localhost:4200/get-user', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -24,8 +32,12 @@ function Login() {
         loginUser({username,password}).then(data =>{
             if(data[0].count == 1){
                 setCookie('isLoggedIn','true')
-                setCookie('username',username)
-                window.location.reload()
+                getUser({username,password}).then(data => {
+                    setCookie('id_utilisateur',data[0].id_utilisateur)
+                    setCookie('username',data[0].username)
+                    setCookie('role_user',data[0].role_user)
+                    window.location.reload()
+                })
             }
         })
     }
