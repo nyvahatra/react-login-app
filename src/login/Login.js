@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { useCookies } from 'react-cookie';
 
 function loginUser(credentials) {
-    return fetch('http://localhost:4200/get-all-users', {
+    return fetch('http://localhost:4200/get-count-users', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

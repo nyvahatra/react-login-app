@@ -17,8 +17,8 @@ function fonctionCondition(role_user){
                         <tbody>
                             <tr>
                                 <td></td>
-                                <td><input className='form-control' /></td>
-                                <td><input className='form-control' /></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                         </tbody>
                     </table>
@@ -40,8 +40,8 @@ function fonctionCondition(role_user){
                         <tbody>
                             <tr>
                                 <td></td>
-                                <td><input className='form-control' /></td>
-                                <td><input className='form-control' /></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                         </tbody>
                     </table>
