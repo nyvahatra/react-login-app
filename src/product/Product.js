@@ -23,8 +23,8 @@ function Product() {
                         <td><input className='form-control' /></td>
                         <td><input className='form-control' /></td>
                         <td>
-                            <button className='btn btn-sm btn-warning'><i class="bi bi-pen-fill"></i></button>
-                            <button className='btn btn-sm btn-danger ms-2'><i class="bi bi-trash3-fill"></i></button>
+                            <button className='btn btn-sm btn-warning'><i className="bi bi-pen-fill"></i></button>
+                            <button className='btn btn-sm btn-danger ms-2'><i className="bi bi-trash3-fill"></i></button>
                         </td>
                     </tr>
                 </tbody>
@@ -33,8 +33,8 @@ function Product() {
         <div className='p-1 d-flex flex-row justify-content-between align-items-center'>
             <input type="text" className='form-control p-2' placeholder='Nom du produit'/>
             <input type="number" step="0.01" className='form-control p-2 ms-2' placeholder="Prix"/>
-            <button className='btn btn-primary btn-sm ms-2'><i class="bi bi-plus-circle"></i></button>
-            <button className='btn btn-secondary btn-sm ms-2'><i class="bi bi-x-lg"></i></button>
+            <button className='btn btn-primary btn-sm ms-2'><i className="bi bi-plus-circle"></i></button>
+            <button className='btn btn-secondary btn-sm ms-2'><i className="bi bi-x-lg"></i></button>
         </div>
       </div>
     </div>
