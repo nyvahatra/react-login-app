@@ -1,0 +1,12 @@
+#liste_product_content table thead tr #col_id{
+    width: 5%;
+}
+#liste_product_content table thead tr #col_nom{
+    width: 45%;
+}
+#liste_product_content table thead tr #col_prix{
+    width: 40%;
+}
+#liste_product_content table thead tr #col_action{
+    width: 10%;
+}
