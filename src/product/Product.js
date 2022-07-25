@@ -88,7 +88,7 @@ function fonctionCondition(role_user, allProducts, productName, productPrice, ur
         return(
             <>
                 <div className='p-1 mt-3' id="liste_product_content">
-                    <table className='table table-bordered'>
+                    <table className='table table-striped table-bordered'>
                         <thead>
                             <tr>
                                 <th id="col_id">ID</th>
@@ -113,7 +113,7 @@ function fonctionCondition(role_user, allProducts, productName, productPrice, ur
         return(
             <>
                 <div className='p-1 mt-3' id="liste_product_content">
-                    <table className='table table-bordered'>
+                    <table className='table table-striped table-bordered'>
                         <thead>
                             <tr>
                                 <th id="col_id">ID</th>
@@ -136,7 +136,7 @@ function fonctionCondition(role_user, allProducts, productName, productPrice, ur
                     <input type="hidden" ref={id_produit}/>
                     <input type="text" ref={productName} className='form-control p-2' placeholder='Nom du produit'/>
                     <input type="number" ref={productPrice} step="0.01" min="0" className='form-control p-2 ms-2' placeholder="Prix"/>
-                    <button className='btn btn-primary btn-sm ms-2' onClick={insert_update_product}><i class="bi bi-check-lg"></i></button>
+                    <button className='btn btn-success btn-sm ms-2' onClick={insert_update_product}><i className="bi bi-check-lg"></i></button>
                     <button className='btn btn-secondary btn-sm ms-2' onClick={resetAdd}><i className="bi bi-x-lg"></i></button>
                 </div>
             </>
@@ -145,7 +145,7 @@ function fonctionCondition(role_user, allProducts, productName, productPrice, ur
         return(
             <>    
                 <div className='p-1 mt-3' id="liste_product_content">
-                    <table className='table table-bordered'>
+                    <table className='table table-striped table-bordered'>
                         <thead>
                             <tr>
                                 <th id="col_id">ID</th>
@@ -173,7 +173,7 @@ function fonctionCondition(role_user, allProducts, productName, productPrice, ur
                     <input type="hidden" ref={id_produit}/>
                     <input type="text" ref={productName} className='form-control p-2' placeholder='Nom du produit'/>
                     <input type="number" ref={productPrice} step="0.01" min="0" className='form-control p-2 ms-2' placeholder="Prix"/>
-                    <button className='btn btn-primary btn-sm ms-2' onClick={insert_update_product}><i class="bi bi-check-lg"></i></button>
+                    <button className='btn btn-success btn-sm ms-2' onClick={insert_update_product}><i className="bi bi-check-lg"></i></button>
                     <button className='btn btn-secondary btn-sm ms-2' onClick={resetAdd}><i className="bi bi-x-lg"></i></button>
                 </div>
             </>

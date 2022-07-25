@@ -1,0 +1,15 @@
+#liste_user_content table thead tr #col_id{
+    width: 5%;
+}
+#liste_user_content table thead tr #col_fullname{
+    width: 40%;
+}
+#liste_user_content table thead tr #col_username{
+    width: 35%;
+}
+#liste_user_content table thead tr #col_role{
+    width: 10%;
+}
+#liste_user_content table thead tr #col_action{
+    width: 10%;
+}

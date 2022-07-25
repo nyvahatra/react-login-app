@@ -143,14 +143,14 @@ function Users() {
             <span className='h2 fw-normal'>Liste des utilisateurs</span>
         </div>
         <div className='p-1 mt-3' id="liste_user_content">
-            <table className='table table-bordered'>
+            <table className='table table-striped table-bordered'>
                 <thead>
                     <tr>
-                        <th>ID</th>
-                        <th>Nom et Prénom</th>
-                        <th>Nom d'utilisateur</th>
-                        <th>Rôle</th>
-                        <th>Actions</th>
+                        <th id="col_id">ID</th>
+                        <th id="col_fullname">Nom et Prénom</th>
+                        <th id="col_username">Nom d'utilisateur</th>
+                        <th id="col_role">Rôle</th>
+                        <th id="col_action">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -182,7 +182,7 @@ function Users() {
             <input type="hidden" ref={id_utilisateur} />
             <input type="password" ref={password} className='form-control p-2 ms-2' placeholder="Mot de passe"/>
             <input type="password" ref={confirmPass} className='form-control p-2 ms-2' placeholder="Confirmation"/>
-            <button className='btn btn-primary btn-sm ms-2' onClick={insert_update_user}><i class="bi bi-check-lg"></i></button>
+            <button className='btn btn-success btn-sm ms-2' onClick={insert_update_user}><i className="bi bi-check-lg"></i></button>
             <button className='btn btn-secondary btn-sm ms-2' onClick={resetAdd}><i className="bi bi-x-lg"></i></button>
         </div>
       </div>

@@ -5,6 +5,7 @@ import logo from '../logo.svg'
 import Users from '../users/Users';
 import { useCookies } from 'react-cookie';
 import Page404 from '../page404/Page404';
+import './Menu.css';
 
 function menuCondition(role_user){
     if(role_user == "admin"){
@@ -50,7 +51,7 @@ function Menu(){
         <BrowserRouter>
         <div className='text-center ps-3 pe-4 shadow-sm d-flex flex-row justify-content-between align-items-center bg-dark'>
             <div className='d-flex flex-row justify-content-between align-items-center'>
-                <img src={logo} width="90" height="90"/>
+                <img src={logo} width="90" height="90" id="logoReact"/>
                 <span className='text-white fs-4'>React App</span>
             </div>
             <div className='w-75 btn-secondary text-center'>
